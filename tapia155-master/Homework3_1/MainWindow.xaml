@@ -1,0 +1,33 @@
+﻿<Window x:Class="Homework3_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Homework3_1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="error">
+        <Label Content="Mortage Calculator" HorizontalAlignment="Left" Margin="226,51,0,0" VerticalAlignment="Top" FontSize="36" FontFamily="Arial" FontWeight="Bold" Height="53" Width="340" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.117"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="outstanding balance.....$" HorizontalAlignment="Left" Margin="227,122,0,0" VerticalAlignment="Top" Height="29" Width="194" FontWeight="Bold" FontSize="16"/>
+        <Label Content="monthly payment.........$" HorizontalAlignment="Left" Margin="227,151,0,0" VerticalAlignment="Top" Height="29" Width="194" FontWeight="Bold" FontSize="16"/>
+        <Label Content="(based on 6.39 % of interest rate)" HorizontalAlignment="Left" Margin="245,316,0,0" VerticalAlignment="Top" Height="29" Width="266" FontWeight="Bold" FontSize="16"/>
+        <Label Content="principal..........................." HorizontalAlignment="Left" Margin="227,239,0,0" VerticalAlignment="Top" Height="29" Width="199" FontWeight="Bold" FontSize="16"/>
+        <Label Content="interest............................." HorizontalAlignment="Left" Margin="227,268,0,0" VerticalAlignment="Top" Height="29" Width="199" FontWeight="Bold" FontSize="16"/>
+        <Button x:Name="enter" Content="Enter" HorizontalAlignment="Left" Margin="362,203,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="16" Click="enter_Click"/>
+        <TextBox x:Name="balance" HorizontalAlignment="Left" Height="23" Margin="426,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="payment" HorizontalAlignment="Left" Height="23" Margin="426,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="16" FontWeight="Bold" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="principal" HorizontalAlignment="Left" Height="23" Margin="426,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="16" FontWeight="Bold" IsEnabled="False" TextChanged="principal_TextChanged"/>
+        <TextBox x:Name="interest" HorizontalAlignment="Left" Height="23" Margin="426,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="16" FontWeight="Bold" IsEnabled="False"/>
+        <Label x:Name="errorMsg" Content="" HorizontalAlignment="Left" Margin="426,176,0,0" VerticalAlignment="Top" Width="206" Height="27" Foreground="Red" FontWeight="Bold"/>
+
+    </Grid>
+</Window>

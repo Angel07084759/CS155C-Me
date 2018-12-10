@@ -1,0 +1,34 @@
+﻿<Window x:Class="MidtermExtraCredit.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MidtermExtraCredit"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="title" Content="Motion in One Dimension (Kinematics)" HorizontalAlignment="Left" Margin="178,0,0,0" VerticalAlignment="Top" Height="43" Width="446" FontSize="24" RenderTransformOrigin="0.731,0.422" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="33" Margin="297,147,0,0" TextWrapping="Wrap" Text="Delta (p)" VerticalAlignment="Top" Width="74" FontSize="16" FontWeight="Bold" IsReadOnly="True"/>
+        <TextBox HorizontalAlignment="Left" Height="33" Margin="297,181,0,0" TextWrapping="Wrap" Text="Delta (v)" VerticalAlignment="Top" Width="74" FontSize="16" FontWeight="Bold" IsReadOnly="True"/>
+        <TextBox HorizontalAlignment="Left" Height="32" Margin="297,112,0,0" TextWrapping="Wrap" Text="Delta (t)" VerticalAlignment="Top" Width="74" FontSize="16" FontWeight="Bold" IsReadOnly="True"/>
+        <TextBox HorizontalAlignment="Left" Height="32" Margin="127,117,0,0" TextWrapping="Wrap" Text="t(i)" VerticalAlignment="Top" Width="33" FontSize="16" FontWeight="Bold" IsReadOnly="True"/>
+        <TextBox HorizontalAlignment="Left" Height="32" Margin="544,117,0,0" TextWrapping="Wrap" Text="t(f)" VerticalAlignment="Top" Width="34" FontSize="16" FontWeight="Bold" IsReadOnly="True"/>
+        <TextBox HorizontalAlignment="Left" Height="33" Margin="127,149,0,0" TextWrapping="Wrap" Text="p(i)" VerticalAlignment="Top" Width="33" FontSize="16" FontWeight="Bold" IsReadOnly="True"/>
+        <TextBox HorizontalAlignment="Left" Height="33" Margin="531,149,0,0" TextWrapping="Wrap" Text="p(f)" VerticalAlignment="Top" Width="47" FontSize="16" FontWeight="Bold" IsReadOnly="True"/>
+        <TextBox HorizontalAlignment="Left" Height="32" Margin="127,182,0,0" TextWrapping="Wrap" Text="v(i)" VerticalAlignment="Top" Width="33" FontSize="16" FontWeight="Bold" IsReadOnly="True"/>
+        <TextBox HorizontalAlignment="Left" Height="32" Margin="544,182,0,0" TextWrapping="Wrap" Text="v(f)" VerticalAlignment="Top" Width="34" FontSize="16" FontWeight="Bold" IsReadOnly="True"/>
+        <TextBox x:Name="ti" HorizontalAlignment="Left" Height="33" Margin="165,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" TextChanged="TextChanged" FontSize="16"/>
+        <TextBox x:Name="pi" HorizontalAlignment="Left" Height="33" Margin="165,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" TextChanged="TextChanged" FontSize="16"/>
+        <TextBox x:Name="vi" HorizontalAlignment="Left" Height="32" Margin="165,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" TextChanged="TextChanged" FontSize="16"/>
+        <TextBox x:Name="dp" HorizontalAlignment="Left" Height="33" Margin="375,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="107" TextChanged="TextChanged" FontSize="16"/>
+        <TextBox x:Name="dv" HorizontalAlignment="Left" Height="33" Margin="375,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="107" TextChanged="TextChanged" FontSize="16"/>
+        <TextBox x:Name="tf" HorizontalAlignment="Left" Height="33" Margin="584,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" TextChanged="TextChanged" FontSize="16"/>
+        <TextBox x:Name="pf" HorizontalAlignment="Left" Height="33" Margin="584,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" TextChanged="TextChanged" FontSize="16"/>
+        <TextBox x:Name="vf" HorizontalAlignment="Left" Height="32" Margin="584,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" TextChanged="TextChanged" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="33" Margin="246,218,0,0" TextWrapping="Wrap" Text="Acceleration (a)" VerticalAlignment="Top" Width="125" FontSize="16" FontWeight="Bold" IsReadOnly="True"/>
+        <TextBox x:Name="a" HorizontalAlignment="Left" Height="33" Margin="375,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="107" TextChanged="TextChanged" FontSize="16"/>
+
+        <TextBox x:Name="dt" HorizontalAlignment="Left" Height="32" Margin="375,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="107" FontSize="16" TextChanged="TextChanged"/>
+        <Button x:Name="solve" Content="SOLVE" HorizontalAlignment="Left" Margin="264,275,0,0" VerticalAlignment="Top" Width="218" FontWeight="Bold" Height="42" Click="solve_Click" FontSize="22"/>
+    </Grid>
+</Window>
